@@ -1,0 +1,31 @@
+.products-slider {
+  padding: 110px 0 120px;
+
+  .slick-dots {
+    text-align: center;
+    margin-top: 30px;
+
+    li {
+      display: inline-block;
+      margin-right: 3px;
+      margin-left: 3px;
+
+      &.slick-active {
+        button {
+          background-color: $green;
+        }
+      }
+    }
+
+    button {
+      border-radius: 50%;
+      background-color: #e8e8e8;
+      border: none;
+      outline: none;
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+}

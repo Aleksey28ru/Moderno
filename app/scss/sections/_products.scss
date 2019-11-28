@@ -103,7 +103,8 @@
   &-author {
     display: flex;
     align-items: center;
-
+    max-width: 255px;
+    
     .avatar {
       display: inline-block;
       margin-right: 14px;
@@ -114,7 +115,7 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-
+    
     span {
       font-size: 14px;
       font-weight: 500;
@@ -123,7 +124,10 @@
 
   &-star {
     font-size: 12px;
-    color: $bg;
+    
+    span {
+      color: $bg;
+    }
   }
 }
 

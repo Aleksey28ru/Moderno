@@ -148,9 +148,17 @@
       cursor: pointer;
       outline: transparent;
 
-      & img {
+      & svg {
         width: 20px;
         height: 20px;
+        fill: $text-light;
+
+        transition: all 0.15s ease-in-out;
+
+
+        &:hover {
+          fill: darken($text-light, 15%);
+        }
       }
     }
   }

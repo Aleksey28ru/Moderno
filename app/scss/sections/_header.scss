@@ -1,0 +1,140 @@
+.header__top-inner {
+  display: flex;
+  height: 81px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__text {
+  margin-left: auto;
+  margin-right: 50px;
+
+  span {
+    color: $orange;
+  }
+}
+
+.basket {
+}
+
+.header__btn {
+  padding: 9px;
+  width: 72px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.header__btn-login {
+  background-color: $green;
+}
+
+.header__btn-register {
+  background-color: $orange;
+  margin-left: 7px;
+}
+
+.header__menu {
+  background-color: $bg;
+}
+
+.menu {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  li {
+    display: inline-block;
+
+    & + li {
+      margin-left: 38px;
+    }
+  }
+
+  a {
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.search {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 532px;
+}
+
+.search__inner {
+  padding: 150px 0 100px;
+  text-align: center;
+  color: #fff;
+
+  &-title {
+    margin-bottom: 16px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &-text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &-form {
+    position: relative;
+    max-width: 670px;
+    margin: 0 auto;
+
+    input {
+      display: block;
+      width: 100%;
+      height: 56px;
+      padding-left: 25px;
+      padding-right: 60px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+      line-height: 30px;
+      color: $text-search;
+      outline: transparent;
+      border: none;
+      box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+      box-shadow: inset 1px 1px 2px transparent;
+      transition: all 0.2s ease-in-out;
+
+      &:focus,
+      &:hover {
+        box-shadow: inset 2px 2px 2px $text-search;
+      }
+
+      &::placeholder {
+        color: $text-search;
+      }
+    }
+
+    button {
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      top: 18px;
+      right: 15px;
+      cursor: pointer;
+      outline: transparent;
+      
+      & img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+  }
+}

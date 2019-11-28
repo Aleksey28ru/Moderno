@@ -1,0 +1,47 @@
+.author {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 750px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    padding: 0 60px;
+    max-width: 653px;
+    width: 100%;
+    min-height: 216px;
+    background-color: $green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    margin-right: 45px;
+    max-width: 260px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    padding: 14px 43px;
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    background-color: #fff;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 2px 2px $text-light;
+    }
+  }
+}
